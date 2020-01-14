@@ -1,13 +1,11 @@
-# @funboxteam/package
+# @funboxteam/beatrix
 
-## Description.
+## Description
 
-Package descripton.
+A set of tools to convert and optimize fonts.
 
 ## Installation
 
-Installation instruction.
-
-## Usage
-
-How to use.
+```sh
+npm install --save @funboxteam/beatrix
+```
