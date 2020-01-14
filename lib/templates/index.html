@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Font tester page</title>
+  <style>
+    select {
+      margin: 30px 30px 0;
+    }
+
+    table {
+      margin: 30px;
+      border-spacing: 0;
+      border: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    td {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 8px;
+      cursor: default;
+      border-right: 1px solid rgba(0, 0, 0, .1);
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      text-align: center;
+    }
+
+    td:last-child {
+      border-right: 0;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    #FONT_STYLES#
+  </style>
+</head>
+<body>
+  <select id="font-select">
+    <option>↓</option>
+    #FONT_OPTIONS#
+  </select>
+
+  <table>
+    <tbody>
+      #FONT_TABLE_ROWS#
+    </tbody>
+  </table>
+
+  <script>
+    document.getElementById('font-select').addEventListener('change', function(e) {
+      document.body.className = e.target.value;
+    });
+  </script>
+</body>
+</html>
