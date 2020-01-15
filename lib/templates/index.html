@@ -11,28 +11,21 @@
       margin: 30px 30px 0;
     }
 
-    table {
+    section {
+      display: flex;
+      flex-wrap: wrap;
       margin: 30px;
-      border-spacing: 0;
-      border: 1px solid rgba(0, 0, 0, .1);
     }
 
-    td {
-      font-size: 20px;
-      line-height: 20px;
-      padding: 8px;
-      cursor: default;
-      border-right: 1px solid rgba(0, 0, 0, .1);
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
+    section div {
+      width: 38px;
+      height: 38px;
+      margin: -1px -1px 0 0;
       text-align: center;
-    }
-
-    td:last-child {
-      border-right: 0;
-    }
-
-    tr:last-child td {
-      border-bottom: 0;
+      font-size: 20px;
+      line-height: 38px;
+      border: 1px solid #e5e5e5;
+      cursor: default;
     }
 
     #FONT_STYLES#
@@ -44,11 +37,9 @@
     #FONT_OPTIONS#
   </select>
 
-  <table>
-    <tbody>
-      #FONT_TABLE_ROWS#
-    </tbody>
-  </table>
+  <section>
+    #FONT_TABLE_ELEMENTS#
+  </section>
 
   <script>
     document.getElementById('font-select').addEventListener('change', function(e) {

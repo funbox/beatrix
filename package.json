@@ -6,7 +6,6 @@
     "build": "node lib/index.js",
     "lint": "eslint -c .eslintrc.js lib",
     "demo": "sirv --host 0.0.0.0 dist/",
-    "prebuild": "npm run lint",
     "prepublishOnly": "npm run build"
   },
   "files": [
@@ -19,10 +18,7 @@
     "eslint": "5.16.0",
     "husky": "3.0.7",
     "lint-staged": "9.4.0",
-    "opentype.js": "1.1.0",
-    "sirv-cli": "0.4.5",
-    "ttf2woff": "2.0.1",
-    "ttf2woff2": "3.0.0"
+    "sirv-cli": "0.4.5"
   },
   "lint-staged": {
     "lib/**/*.{js}": [
