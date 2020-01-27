@@ -1,6 +1,6 @@
 {
   "name": "@funboxteam/beatrix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tool for converting and optimizing font files",
   "scripts": {
     "build": "node lib/index.js",
