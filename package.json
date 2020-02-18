@@ -6,6 +6,7 @@
     "build": "node lib/index.js",
     "lint": "eslint -c .eslintrc.js lib",
     "demo": "sirv --host 0.0.0.0 dist/",
+    "prebuild": "npm run lint",
     "prepublishOnly": "npm run build"
   },
   "files": [
@@ -21,8 +22,9 @@
     "sirv-cli": "0.4.5"
   },
   "lint-staged": {
-    "lib/**/*.{js}": [
-      "eslint --fix --cache -c .eslintrc.js"
+    "lib/**/*.js": [
+      "eslint --fix --cache -c .eslintrc.js",
+      "git add"
     ]
   },
   "husky": {
