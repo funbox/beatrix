@@ -17,6 +17,9 @@
     "CHANGELOG.md",
     "README.md"
   ],
+  "dependencies": {
+    "commander": "4.1.1"
+  },
   "devDependencies": {
     "@funboxteam/eslint-config": "5.1.0",
     "eslint": "5.16.0",
@@ -34,8 +37,5 @@
     "hooks": {
       "pre-commit": "lint-staged -q"
     }
-  },
-  "dependencies": {
-    "commander": "4.1.1"
   }
 }
