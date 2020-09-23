@@ -9,6 +9,7 @@
     "prebuild": "npm run lint",
     "prepublishOnly": "npm run build"
   },
+  "main": "./lib/cli.js",
   "files": [
     "dist/",
     "CHANGELOG.md",
@@ -31,5 +32,8 @@
     "hooks": {
       "pre-commit": "lint-staged -q"
     }
+  },
+  "dependencies": {
+    "commander": "4.1.1"
   }
 }
