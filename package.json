@@ -3,15 +3,17 @@
   "version": "1.2.0",
   "description": "A tool for converting and optimizing font files",
   "scripts": {
-    "build": "node lib/index.js",
-    "lint": "eslint -c .eslintrc.js lib",
     "demo": "sirv --host 0.0.0.0 dist/",
-    "prebuild": "npm run lint",
-    "prepublishOnly": "npm run build"
+    "build": "./lib/cli.js --config ./lib/config.js --output ./dist ./demo-typefaces",
+    "lint": "eslint -c .eslintrc.js lib",
+    "prebuild": "npm run lint"
   },
-  "main": "./lib/cli.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "beatrix": "./lib/cli.js"
+  },
   "files": [
-    "dist/",
+    "lib/",
     "CHANGELOG.md",
     "README.md"
   ],
