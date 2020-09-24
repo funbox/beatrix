@@ -2,11 +2,8 @@
   "name": "@funboxteam/beatrix",
   "version": "1.2.0",
   "description": "A tool for converting and optimizing font files",
-  "scripts": {
-    "test": "./lib/cli.js --config ./example/config.js --output ./dist ./example",
-    "lint": "eslint -c .eslintrc.js lib",
-    "pretest": "npm run lint"
-  },
+  "author": "Igor Adamenko <mail@igoradamenko.com> (https://igoradamenko.com)",
+  "license": "MIT",
   "main": "./lib/index.js",
   "bin": {
     "beatrix": "./lib/cli.js"
@@ -16,6 +13,11 @@
     "CHANGELOG.md",
     "README.md"
   ],
+  "scripts": {
+    "test": "./lib/cli.js --config ./example/config.js --output ./dist ./example",
+    "lint": "eslint -c .eslintrc.js lib",
+    "pretest": "npm run lint"
+  },
   "dependencies": {
     "commander": "4.1.1"
   },
