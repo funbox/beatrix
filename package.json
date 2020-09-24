@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "A tool for converting and optimizing font files",
   "scripts": {
-    "build": "./lib/cli.js --config ./lib/config.js --output ./dist ./demo-typefaces",
+    "build": "./lib/cli.js --config ./example/config.js --output ./dist ./example",
     "lint": "eslint -c .eslintrc.js lib",
     "prebuild": "npm run lint"
   },
