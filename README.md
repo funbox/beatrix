@@ -1,3 +1,5 @@
+![Beatrix logo: “BEATRIX” cut into two pieces by katana](logo-top.svg)
+
 # @funboxteam/beatrix
 
 ## Description
@@ -29,3 +31,5 @@ After than one may use two scripts:
 
 1. `npm run build` builds fonts and demo pages.
 2. `npm run demo` runs dev server on 0.0.0.0:5000 with demo page.
+
+[![Sponsored by FunBox](logo-bottom.svg)](https://funbox.ru)
