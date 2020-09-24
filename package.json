@@ -3,7 +3,6 @@
   "version": "1.2.0",
   "description": "A tool for converting and optimizing font files",
   "scripts": {
-    "demo": "sirv --host 0.0.0.0 dist/",
     "build": "./lib/cli.js --config ./lib/config.js --output ./dist ./demo-typefaces",
     "lint": "eslint -c .eslintrc.js lib",
     "prebuild": "npm run lint"
@@ -24,8 +23,7 @@
     "@funboxteam/eslint-config": "5.1.0",
     "eslint": "5.16.0",
     "husky": "3.0.7",
-    "lint-staged": "9.4.0",
-    "sirv-cli": "0.4.5"
+    "lint-staged": "9.4.0"
   },
   "lint-staged": {
     "lib/**/*.js": [
