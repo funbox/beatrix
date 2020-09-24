@@ -1,10 +1,8 @@
 ![Beatrix logo: “BEATRIX” cut into two pieces by katana](logo-top.svg)
 
-# @funboxteam/beatrix
-
-## Description
-
-A set of tools to convert and optimize fonts.
+<div align="center">
+  <b>Beatrix</b> chops off useless fonts parts and converts TTF/OTF files into WOFF & WOFF2.
+</div>
 
 ## Installation
 
