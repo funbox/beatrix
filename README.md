@@ -4,6 +4,16 @@
   <b>Beatrix</b> chops off useless fonts parts and converts TTF/OTF files into WOFF & WOFF2
 </div> 
 
+## Rationale
+
+Users spend a lot of time downloading web assets: JS, CSS, images, fonts, etc.
+To reduce waiting time, developers compress the assets, gzip them, use optimized formats for images and fonts.
+
+But sometimes the developers can go a little bit further. When they have all the rights for fonts they use,
+it's possible to leave only the glyphs their website needs. Just cut off the rest ones.
+
+That's exactly how the tool works.
+
 ## Getting Started
 
 [По-русски](./README.ru.md)
@@ -141,15 +151,5 @@ module.exports = {
 ```
 
 The characters described above will be left in the font files (as well as kerning pairs for them), the other ones will be cut off.
-
-## Rationale
-
-Users spend a lot of time downloading web assets: JS, CSS, images, fonts, etc.
-To reduce waiting time, developers compress the assets, gzip them, use optimized formats for images and fonts.
-
-But sometimes the developers can go a little bit further. When they have all the rights for fonts they use,
-it's possible to leave only the glyphs their website needs. Just cut off the rest ones.
-
-That's exactly how the tool works.
 
 [![Sponsored by FunBox](logo-bottom.svg)](https://funbox.ru)
