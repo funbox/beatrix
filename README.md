@@ -1,4 +1,6 @@
-![Beatrix logo: “BEATRIX” cut into two pieces by katana](logo-top.svg)
+<div align="center">
+  <img src="logo-top.svg" alt="Beatrix logo: “BEATRIX” cut into two pieces by katana" />
+</div> 
 
 <div align="center">
   <b>Beatrix</b> chops off useless fonts parts and converts TTF/OTF files into WOFF & WOFF2

@@ -1,4 +1,6 @@
-![Логотип Беатрикс: слово “BEATRIX” разрезанное на две части катаной](logo-top.svg)
+<div align="center">
+  <img src="logo-top.svg" alt="Логотип Беатрикс: слово “BEATRIX” разрезанное на две части катаной" />
+</div>
 
 <div align="center">
   <b>Beatrix</b> отрезает ненужные части шрифтов и конвертирует TTF/OTF в WOFF и WOFF2
