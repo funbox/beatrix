@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 (11.10.2021)
+
+Now it's possible to pass desired layout features using config file. 
+
+List the features you want to keep using the `LAYOUT_FEATURES` config field. 
+See the [default config](https://github.com/funbox/beatrix/blob/1c645bd42e686eb5818831be86f41003bc56ff0d/lib/default-config.js#L65) for example.
+
+
 ## 2.0.1 (10.06.2021)
 
 Fixed several security vulnerabilities:

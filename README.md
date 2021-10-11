@@ -125,8 +125,14 @@ Done.
 
 ### Config file
 
-Config is a JS or JSON file which describes an object containing `CHARACTERS` array, where each item is a string
-describing one Unicode number or a range of them. Each Unicode number is represented as 4 hex digits.
+Config is a JS or JSON file which describes an object containing `CHARACTERS` and `LAYOUT_FEATURES`.
+
+`CHARACTERS` is an array, where each item is a string describing one Unicode number or a range of them. 
+Each Unicode number is represented as 4 hex digits.
+
+`LAYOUT_FEATURES` is an array of [OpenType features](https://docs.microsoft.com/en-us/typography/opentype/spec/featurelist) (e.g., `kern`, `liga`, `tnum`, etc.).
+
+**Please note** that if no config provided, the [default config](lib/default-config.js) is used. If one of the options is not present in the config, the appropriate option from the default config is used.
 
 Example:
 
@@ -148,10 +154,15 @@ module.exports = {
     '00A9',
  
     // ...
-  ]
+  ],
+
+  // Drop all the features except 'tnum' and 'kern'
+  LAYOUT_FEATURES: ['tnum', 'kern']
 }
 ```
 
-The characters described above will be left in the font files (as well as kerning pairs for them), the other ones will be cut off.
+The characters and features described above will be left in the font files, all the rest will be cut off.
+
+If you want to remove all the characters or features completely just pass an empty array.
 
 [![Sponsored by FunBox](logo-bottom.svg)](https://funbox.ru)
