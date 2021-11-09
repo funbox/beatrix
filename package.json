@@ -18,8 +18,9 @@
     "README.md"
   ],
   "scripts": {
-    "test": "./lib/cli.js --config ./example/config.js --output ./dist ./example",
     "lint": "eslint -c .eslintrc.js lib",
+    "test": "./lib/cli.js --config ./example/config.js --output ./dist ./example",
+    "prepublishOnly": "lawyer",
     "pretest": "npm run lint"
   },
   "dependencies": {
