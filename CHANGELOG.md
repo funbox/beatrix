@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.0 (02.05.2023)
+
+Added `lnum` into the list of supported OpenType features.
+
+No need to migrate anything, but your font files may become bigger a bit. 
+Override `LAYOUT_FEATURES` config option if you want to turn some OpenType features off.
+
+
 ## 2.1.0 (11.10.2021)
 
 Now it's possible to pass desired layout features using config file. 
