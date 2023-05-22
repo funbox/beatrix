@@ -27,7 +27,7 @@
     "commander": "4.1.1"
   },
   "devDependencies": {
-    "@funboxteam/eslint-config": "7.1.0",
+    "@funboxteam/eslint-config": "7.3.0",
     "eslint": "7.32.0",
     "husky": "3.0.7",
     "lint-staged": "9.4.0"
