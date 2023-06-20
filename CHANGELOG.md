@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.1 (20.06.2023)
+
+Fixed the way Beatrix works with file paths, just to be sure that it won't blow up the directories outside of its domain.
+
+Also ensured that the tool works properly on Node.js 18.
+
+
 ## 3.0.0 (02.05.2023)
 
 Added `lnum` into the list of supported OpenType features.
